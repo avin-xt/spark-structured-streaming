@@ -1,6 +1,6 @@
 # Streaming 
 
-1. Streaming query is a background thread (co-ordinator ) thats started to manage execution of streaming job.
+1. ***Streaming query*** is a background thread (co-ordinator ) thats started to manage execution of streaming job.
 2. SQ will prepare the checkpointDirectory & also watches for new data.
 3. When new data lands , **SQ configures the input for micro batch & then triggeres it.**
 4. SQ will monitor the Micro-batch execution ,and once its succesful it commits the check-point.
